@@ -1,0 +1,5 @@
+-do a single page app
+-request an api to work with
+-add 2 event listeners
+-use for each once
+-run on a single page
