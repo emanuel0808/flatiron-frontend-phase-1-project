@@ -1,3 +1,22 @@
 body{
-    background-color: aqua;
+    background-color: purple;
 }
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+  }
+  
+  .square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Define styles for different pieces */
+  .piece {
+    font-size: 32px;
+  }
+  

@@ -1,0 +1,40 @@
+{
+    "cars": [
+      {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2021,
+        "imageUrl":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.buyatoyota.com%2Fes%2Fsandiego%2Fvehicles%2Fcamryhybrid%2F2021%2Findex.page&psig=AOvVaw0N93eeQR5wWCHM8hb86Qv_&ust=1687380553383000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPC92cjc0v8CFQAAAAAdAAAAABAD",
+        "color": "Silver",
+        "price": 25000
+        
+      },
+      {
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2017,
+        "imageUrl":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edmunds.com%2Fhonda%2Faccord%2F2016%2Fst-401575250%2Freview%2F&psig=AOvVaw0dx-aYCLKLPpApGMlBNuUM&ust=1687380647358000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOjg6fLc0v8CFQAAAAAdAAAAABAJ",
+        "color": "Red",
+        "price": 22000
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 2019,
+        "imageUrl":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.drive217.com%2Finventory%2Fnew-2023-ford-mustang-gt-fastback-rwd-car-1fa6p8cf0p5302606%2F&psig=AOvVaw3Dvx_K36IpsXRXLDH2-eJx&ust=1687380735822000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKDflJ_d0v8CFQAAAAAdAAAAABAE",
+        "color": "Black",
+        "price": 35000
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler",
+        "year": 2017,
+        "imageUrl":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.drive.com.au%2Fnews%2F2017-jeep-wrangler-recalled%2F&psig=AOvVaw2dwyXZFceZFrJgjvQdci_4&ust=1687380816993000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNj99sPd0v8CFQAAAAAdAAAAABAF",
+        "color": "Blue",
+        "price": 25000
+
+      }
+      
+    ]
+  }
+  
