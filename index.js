@@ -1,33 +1,56 @@
 const API = "http://localhost:3000/cars"
+let carsList = [];
 
 
 let addCars = false;
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const addBtn= document.querySelector("#new-car-btn");
     const carFormContainer = document.querySelector(".container");
 
     fetch(API)
-      .then((response) => response.json())
-      .then(renderCars)
+  .then((response) => response.json())
+  .then((data) => {
+    carsList = data; 
+    renderCars();
 
-      function renderCars(cars) {
-        console.log(cars);
+    function renderCars(carsList){
+        console.log(carsList);
+    }
+  })
+  .catch((error) => {
+    console.log("Error fetching car data:", error);
+  });
 
 
-
-        CarsList.forEach((cars) => {
+        
+        carsList.forEach((car) => {
             const card = document.createElement("div");
-            card.classList("card")
+            card.classList.add("card");
 
-            const img = document.createElement("img");
-            img.classList("card-img-top");
-            img.src = cars.imageUrl;
+
+          const h2 = document.createElement("h2");
+            h2.textContent = car.name
+            console.log(h2)
+
+
+          const img = document.createElement("img");
+            img.classList.add("car-img", "test-img");
+            img.src = car.imageUrl;
+
+          const p = document.createElement("p");
+
+           
+
+
+
         })
 
 
 
-      }
+      
 
 
 
