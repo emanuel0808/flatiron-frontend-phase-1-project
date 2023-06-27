@@ -33,14 +33,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
           const h2 = document.createElement("h2");
             h2.textContent = car.name
-            console.log(h2)
+            
 
 
           const img = document.createElement("img");
             img.classList.add("car-img", "test-img");
             img.src = car.imageUrl;
 
+            
+
           const p = document.createElement("p");
+
+
+          const button = document.createElement("button");
+          button.classList.add("btn");
+          button.setAttribute("type", "button");
+
+          card.append(h2, img, p);
+          console.log(button)
+
+          
 
            
 
