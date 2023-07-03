@@ -21,9 +21,9 @@ body{
     font-size: 32px;
   }
 
-  .header {
+  #cars-header {
     width: 20px;
-    height: 30px;
+    height: 40px;
   }
   
   

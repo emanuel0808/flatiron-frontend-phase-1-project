@@ -5,6 +5,8 @@ let addCars = false;
 document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.querySelector("#new-car-btn");
   const carFormContainer = document.querySelector(".container");
+  
+  
 
   fetch(API)
     .then((response) => response.json())
@@ -49,4 +51,18 @@ document.addEventListener("DOMContentLoaded", () => {
       carFormContainer.style.display = "none";
     }
   });
+  
+  carForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log("Form submitted");
+    // Add your desired functionality here
+  });
+
+  // Event listener for mouseenter
+  const cardContainer = document.querySelector("#card-container");
+  cardContainer.addEventListener("mouseenter", () => {
+    console.log("mouseenter event on card-container");
+    // Add your desired functionality here
+  });
+
 });
