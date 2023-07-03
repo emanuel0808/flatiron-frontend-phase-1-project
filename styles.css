@@ -1,5 +1,6 @@
 body{
-    background-color: turquoise;
+    background-color: black;
+    
 }
 .board {
     display: flex;
@@ -19,4 +20,10 @@ body{
   .piece {
     font-size: 32px;
   }
+
+  .header {
+    width: 20px;
+    height: 30px;
+  }
+  
   
