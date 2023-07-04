@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white;
     
 }
 .board {
@@ -20,10 +20,3 @@ body{
   .piece {
     font-size: 32px;
   }
-
-  #cars-header {
-    width: 20px;
-    height: 40px;
-  }
-  
-  

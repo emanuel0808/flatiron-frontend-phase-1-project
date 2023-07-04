@@ -5,6 +5,7 @@ let addCars = false;
 document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.querySelector("#new-car-btn");
   const carFormContainer = document.querySelector(".container");
+  const carForm = document.querySelector(".add-cars-form");
   
   
 

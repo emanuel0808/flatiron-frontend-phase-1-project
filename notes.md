@@ -1,5 +1,5 @@
--do a single page app
--request an api to work with
+-do a single page app x
+-request an api to work with x
 -add 2 event listeners
--use for each once
+-use for each once x
 -run on a single page
