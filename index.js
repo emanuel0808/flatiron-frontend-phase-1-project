@@ -38,8 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.add("btn");
       button.setAttribute("id", `${car.id}`);
 
-      card.append(h2, img, p, button);
-      document.querySelector("#card-container").appendChild(card);
+      
     });
   }
 
