@@ -3,11 +3,17 @@ let carsList = [];
 let addCars = false;
 
 document.addEventListener("DOMContentLoaded", () => {
-  const addBtn = document.querySelector("#new-car-btn");
+  const addBtn = document.querySelector("#addBtn");
   const carFormContainer = document.querySelector(".container");
   const carForm = document.querySelector(".add-cars-form");
-  
-  
+  const cardContainer = document.querySelector("#card-container");
+
+  if (cardContainer) {
+    cardContainer.addEventListener("mouseenter", () => {
+      console.log("mouseenter event on card-container");
+      // Add your desired functionality here
+    });
+  }
 
   fetch(API)
     .then((response) => response.json())
@@ -20,26 +26,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   function renderCars(cars) {
-    console.log(cars);
-    cars.forEach((car) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
+    if (cardContainer) {
+      cardContainer.innerHTML = ""; // Clear existing cards
+      cars.forEach((car) => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-      const h2 = document.createElement("h2");
-      h2.textContent = car.name;
+        const h2 = document.createElement("h2");
+        h2.textContent = car.make + " " + car.model;
 
-      const img = document.createElement("img");
-      img.classList.add("car-img", "test-img");
-      img.src = car.imageUrl;
+        const img = document.createElement("img");
+        img.classList.add("car-img", "test-img");
+        img.src = car.imageUrl;
 
-      const p = document.createElement("p");
+        const p = document.createElement("p");
+        p.textContent = "Color: " + car.color;
 
-      const button = document.createElement("button");
-      button.classList.add("btn");
-      button.setAttribute("id", `${car.id}`);
+        const button = document.createElement("button");
+        button.classList.add("btn");
+        button.setAttribute("id", `${car.id}`);
+        button.textContent = "Price: $" + car.price;
 
-      
-    });
+        card.appendChild(h2);
+        card.appendChild(img);
+        card.appendChild(p);
+        card.appendChild(button);
+        cardContainer.appendChild(card);
+      });
+    }
   }
 
   addBtn.addEventListener("click", () => {
@@ -51,18 +65,20 @@ document.addEventListener("DOMContentLoaded", () => {
       carFormContainer.style.display = "none";
     }
   });
-  
+
   carForm.addEventListener("submit", (event) => {
     event.preventDefault();
     console.log("Form submitted");
-    // Add your desired functionality here
-  });
 
-  // Event listener for mouseenter
-  const cardContainer = document.querySelector("#card-container");
-  cardContainer.addEventListener("mouseenter", () => {
-    console.log("mouseenter event on card-container");
-    // Add your desired functionality here
-  });
+    const searchTerm = carForm.elements["search"].value.toLowerCase();
+    const filteredCars = carsList.filter((car) => {
+      const name = car.make.toLowerCase() + " " + car.model.toLowerCase();
+      const color = car.color.toLowerCase();
+      return name.includes(searchTerm) || color.includes(searchTerm);
+    });
 
+    renderCars(filteredCars);
+  });
 });
+
+
