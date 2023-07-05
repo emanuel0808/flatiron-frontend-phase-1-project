@@ -39,8 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
         img.classList.add("car-img", "test-img");
         img.src = car.imageUrl;
 
+        const pColor = document.createElement("p");
+        pColor.textContent = "Color: " + car.color;
+
         const p = document.createElement("p");
-        p.textContent = "Color: " + car.color;
+        p.textContent = "description: " + car.description;
 
         const button = document.createElement("button");
         button.classList.add("btn");
@@ -49,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         card.appendChild(h2);
         card.appendChild(img);
+        card.appendChild(pColor);
         card.appendChild(p);
         card.appendChild(button);
         cardContainer.appendChild(card);
@@ -70,14 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     console.log("Form submitted");
 
-    const searchTerm = carForm.elements["search"].value.toLowerCase();
-    const filteredCars = carsList.filter((car) => {
-      const name = car.make.toLowerCase() + " " + car.model.toLowerCase();
-      const color = car.color.toLowerCase();
-      return name.includes(searchTerm) || color.includes(searchTerm);
-    });
+    // const searchTerm = carForm.elements["search"].value.toLowerCase();
+    // const filteredCars = carsList.filter((car) => {
+    //   const name = car.make.toLowerCase() + " " + car.model.toLowerCase();
+    //   const color = car.color.toLowerCase();
+    //   return name.includes(searchTerm) || color.includes(searchTerm);
+    // });
 
-    renderCars(filteredCars);
+    renderCars(carsList);
   });
 });
 
