@@ -43,17 +43,22 @@ document.addEventListener("DOMContentLoaded", () => {
         pColor.textContent = "Color: " + car.color;
 
         const p = document.createElement("p");
-        p.textContent = "description: " + car.description;
+        p.textContent = "Description: " + car.description;
 
         const button = document.createElement("button");
         button.classList.add("btn");
         button.setAttribute("id", `${car.id}`);
         button.textContent = "Price: $" + car.price;
 
+        // Event listener for image click
+        img.addEventListener("click", () => {
+          alert(car.description);
+        });
+
         card.appendChild(h2);
         card.appendChild(img);
         card.appendChild(pColor);
-        card.appendChild(p);
+        
         card.appendChild(button);
         cardContainer.appendChild(card);
       });
@@ -74,15 +79,69 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     console.log("Form submitted");
 
-    // const searchTerm = carForm.elements["search"].value.toLowerCase();
-    // const filteredCars = carsList.filter((car) => {
-    //   const name = car.make.toLowerCase() + " " + car.model.toLowerCase();
-    //   const color = car.color.toLowerCase();
-    //   return name.includes(searchTerm) || color.includes(searchTerm);
-    // });
+    const searchTermInput = carForm.elements["search"];
+    if (searchTermInput) {
+      const searchTerm = searchTermInput.value.toLowerCase();
+      const filteredCars = carsList.filter((car) => {
+        const name = car.make.toLowerCase() + " " + car.model.toLowerCase();
+        const color = car.color.toLowerCase();
+        return name.includes(searchTerm) || color.includes(searchTerm);
+      });
 
-    renderCars(carsList);
+      renderCars(filteredCars);
+    } else {
+      console.log("Search input not found");
+    }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
