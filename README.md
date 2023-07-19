@@ -4,11 +4,11 @@ Welcome to the Luxury Car Sales Website! This project is an online platform that
 
 ## Introduction
 
-The Luxury Car Sales Website is an elegant single page app built using HTML, CSS, and javascript it fetches the data from my own db.json i created here is the link  It offers a handpicked selection of luxury cars with stunning images and detailed descriptions, allowing users to explore each vehicle's features and specifications.
+The Luxury Car Sales Website is an elegant single page app built using HTML, CSS, and javascript it fetches the data from my own db.json file  i created here is the link  "http://localhost:3000/cars"; It offers a handpicked selection of luxury cars with stunning images and detailed descriptions, allowing users to explore each vehicle's features. 
 
 ## Features
 
-- **Curated Luxury Cars**: The website showcases a collection of carefully curated luxury cars from top manufacturers such as Lamborghini, Ferrari, Maserati, Aston Martin, and McLaren.
+- ** Luxury Cars**: The website showcases a collection of carefully curated luxury cars from top manufacturers such as Lamborghini, Ferrari, Maserati, Aston Martin, and McLaren.
 
 - **Detailed Car Information**: Each car listing includes a high-resolution image, make, model, year, color, price, and a captivating description that highlights its unique features and qualities.
 
