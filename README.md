@@ -25,13 +25,13 @@ The Luxury Car Sales Website is an elegant single page app built using HTML, CSS
 
 To run this project locally on your machine, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/luxury-car-sales.git`
-2. Change directory: `cd luxury-car-sales`
-3. Install dependencies: `npm install` (or `yarn install` if you prefer using Yarn)
+1. Clone this repository: `git@github.com:emanuel0808/flatiron-frontend-phase-1-project.git`
+2. Change directory: `cd flatiron-frontend-phase-1-project`
+3. Install dependencies: `npm install` 
 
 ## Usage
 
 Once you have set up the project, you can start the development server with the following command:
 
 ```bash
-npm start
+
