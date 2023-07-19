@@ -12,7 +12,7 @@ The Luxury Car Sales Website is an elegant single page app built using HTML, CSS
 
 - **Detailed Car Information**: Each car listing includes a high-resolution image, make, model, year, color, price, and a captivating description that highlights its unique features and qualities.
 
-- **Search and Filter**: Users can easily search for specific cars using keywords or apply filters based on make, model, year, or price range.
+- **Search and Filter**: Users can easily search for specific cars using keywords or apply filters based on car name or color.
 
 - **User Authentication**: To make a purchase, users need to sign up and log in, ensuring a secure and personalized experience.
 
