@@ -33,5 +33,5 @@ To run this project locally on your machine, follow these steps:
 
 Once you have set up the project, you can start the development server with the following command:
 
-```bash
+run json-server --watch db.json so the server runs correctly
 
